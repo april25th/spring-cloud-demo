@@ -180,6 +180,36 @@
                         </dependency>
                     </dependencies>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <executions>
+                        <execution>
+
+                            <id>copy-resources</id>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+
+                                <nonFilteredFileExtensions>
+                                    <nonFilteredFileExtension>executable</nonFilteredFileExtension>
+                                    <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                                    <nonFilteredFileExtension>TTF</nonFilteredFileExtension>
+                                </nonFilteredFileExtensions>
+
+                                <outputDirectory>${project.build.directory}/docker</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>src/main/docker</directory>
+                                        <filtering>true</filtering>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
