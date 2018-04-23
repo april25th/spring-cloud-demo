@@ -3,6 +3,8 @@ server:
 management:
   port: 9218
   context-path: '/e58a0ff5-9f60-4545-9aa2-2b91c8a6d53b'
+  security:
+    enabled: false
 eureka:
   client:
     service-url:
@@ -27,6 +29,17 @@ spring:
     loadbalancer:
       retry:
         enabled: true
+security:
+  basic:
+    enabled: false
+endpoints:
+  actuator:
+    enabled: true
+    sensitive: false
+  health:
+    sensitive: false
+    enabled: true
+
   #boot:
     #admin:
       #turbine:
