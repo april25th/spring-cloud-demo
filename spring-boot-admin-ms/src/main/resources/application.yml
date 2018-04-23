@@ -23,7 +23,7 @@ eureka:
     status-page-url-path: ${management.context-path}/info
     health-check-url-path: ${management.context-path}/health
     prefer-ip-address: true
-    ip-address: discovery1
+    ip-address: 120.27.17.206
     lease-renewal-interval-in-seconds: 10
 spring:
   application:
@@ -32,16 +32,6 @@ spring:
     loadbalancer:
       retry:
         enabled: true
-security:
-  basic:
-    enabled: false
-endpoints:
-  actuator:
-    enabled: false
-    sensitive: false
-  health:
-    sensitive: false
-    enabled: false
 
   #boot:
     #admin:
