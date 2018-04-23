@@ -34,11 +34,11 @@ security:
     enabled: false
 endpoints:
   actuator:
-    enabled: true
+    enabled: false
     sensitive: false
   health:
     sensitive: false
-    enabled: true
+    enabled: false
 
   #boot:
     #admin:
