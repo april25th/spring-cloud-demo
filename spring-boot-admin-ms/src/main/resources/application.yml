@@ -1,7 +1,9 @@
 server:
-  port: 7020
+  #port: 7020
+  port: 8090
 management:
-  port: 9218
+  #port: 9218
+  port: 8091
   context-path: '/e58a0ff5-9f60-4545-9aa2-2b91c8a6d53b'
   security:
     enabled: false
