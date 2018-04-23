@@ -1,4 +1,4 @@
-FROM pronter/jce-java
+FROM cemmersb/centos-jdk8:1.0.1
 
 VOLUME /tmp
 COPY spring-boot-admin-ms-0.0.1-SNAPSHOT.jar /app.jar
