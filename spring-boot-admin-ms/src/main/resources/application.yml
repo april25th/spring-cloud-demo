@@ -20,7 +20,8 @@ eureka:
         path: ${management.context-path}/health
     status-page-url-path: ${management.context-path}/info
     health-check-url-path: ${management.context-path}/health
-    prefer-ip-address: false
+    prefer-ip-address: true
+    ip-address: discovery1
     lease-renewal-interval-in-seconds: 10
 spring:
   application:
